@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main {
+            width: 80vw;
+            height: 80vh;
+            background-color: red;
+            display: flex;
+            /* flex-direction: row;
+            flex-wrap: nowrap; */
+            flex-flow: row nowrap;
+            /* justify-content: space-around; */
+            /* align-content: center; */
+            align-items: baseline;
+
+        }
+        .items{
+            width: 400px;
+            height: 100px;
+            color: royalblue;
+            background-color: rgb(126, 119, 119);
+            border: 2px solid black;
+        }
+        #item1{
+          background-color: coral ;
+          order: 3;
+          flex-shrink: 2;
+          /* flex-grow: 2; */
+        }
+        #item2{
+          background-color: rgb(21, 10, 59) ;
+          order: 4;
+          flex-basis: 200px;
+          align-self: center;
+          /* flex-grow: 3; */
+        }
+        #item3{
+          background-color: rgb(255, 80, 133) ;
+          background-repeat: no-repeat;
+          
+          order: 2;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Flex layout</h1>
+    <div id="main">
+        <div class="items" id="item1">1jkjk</div>
+        <div class="items" id="item2">2</div>
+        <div class="items" id="item3">3</div>
+        <div class="items" id="item4">4</div>
+        <div class="items" id="item5">5</div>
+        <!-- <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div> -->
+    </div>
+</body>
+
+</html>
